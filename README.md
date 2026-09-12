@@ -1,4 +1,4 @@
-# Afuninteractive
+# AFUN Interactive
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,5 +64,36 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Afuninteractive is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://equityzen.com/company/afuninteractive
+AFUN Interactive (에이펀인터렉티브) is a Seoul-based real-time 3D content production studio founded in
+2017 that builds digital humans, virtual celebrities and high-quality real-time 3D media. Its four
+stated service lines are Digital Celebrity Management, Digital Human, Ganimation (a real-time
+animation/game hybrid genre that won at the 2018 Venice International Film Festival), and High
+Quality Realtime 3D Contents. Through its subsidiary VV Entertainment it produces and manages the
+virtual K-pop artist APOKI.
+
+## Why this profile is thin
+
+**No API surface — no developer program.** AFUN Interactive is a work-for-hire production and
+artist-management business. Its entire public web presence is a six-page Korean corporate brochure
+(About Us, Business Area, Our Works, News, Career, Contact Us) served from
+`www.afun-interactive.com` behind a Cafe24 "CUPID" AES-cookie bot challenge. The challenge was
+solved for this profile and every page was read: there is no developer, docs, API or downloads
+section anywhere on the site. Contract discovery (2026-09-12) additionally found no OpenAPI,
+Swagger, GraphQL, AsyncAPI, MCP manifest, A2A agent card, `llms.txt`, `apis.json` or any
+`/.well-known/` document on any host the company operates; no GitHub organization under any
+AFUN / APOKI / VV name; and no first-party package on npm, PyPI, crates.io or RubyGems.
+
+Note on soft-404s: behind the bot challenge the origin answers HTTP **200** with an HTML body
+titled "404 Not found Error" for every unknown path. A control path
+(`/zzz-control-does-not-exist-98765`) returned a byte-for-byte identical body, which is how each
+200 in `well-known/afuninteractive-well-known.yml` is recorded as an absence rather than a document.
+
+## Links
+
+- Website — https://www.afun-interactive.com/
+- Business Area — https://www.afun-interactive.com/business/sub01.html
+- Our Works — https://www.afun-interactive.com/works/sub01.html
+- News — https://www.afun-interactive.com/news/sub01.html
+- APOKI (virtual artist, via VV Entertainment) — https://apoki.ai/
+- VV Entertainment (subsidiary) — https://vv-ent.com/
+- Secondary-market listing — https://equityzen.com/company/afuninteractive

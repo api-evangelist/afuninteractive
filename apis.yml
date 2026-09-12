@@ -1,17 +1,33 @@
 aid: afuninteractive
-name: Afuninteractive
-description: 'Afuninteractive is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+name: AFUN Interactive
+description: >-
+  AFUN Interactive (에이펀인터렉티브) is a Seoul-based real-time 3D content production studio founded in
+  2017 that builds digital humans, virtual celebrities and high-quality real-time 3D media. Its four
+  stated service lines are Digital Celebrity Management, Digital Human (photoreal CG characters and
+  live avatars for hologram, VR, AR and AI concierge use), Ganimation (a real-time animation/game
+  hybrid genre that won at the 2018 Venice International Film Festival), and High Quality Realtime
+  3D Contents (AR content, car configurators and high-end MR for automotive, entertainment and
+  telecom clients). Through its subsidiary VV Entertainment it produces and manages the virtual
+  K-pop artist APOKI. It is a work-for-hire production and artist-management business that sells
+  finished 3D content, not developer access, and publishes no public API, SDK, developer portal or
+  machine-readable specification.
+image: https://www.afun-interactive.com/images/common/linkkakao_bar.jpg
 url: https://raw.githubusercontent.com/api-evangelist/afuninteractive/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
 specificationVersion: '0.20'
 created: '2026-09-12'
 modified: '2026-09-12'
 tags:
 - Company
+- 3D Content Production
+- Digital Human
+- Virtual Artists
+- Real-Time Rendering
+- Entertainment
+- Augmented Reality
+- Virtual Reality
+- South Korea
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +35,46 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/afuninteractive-domain-security.yml
 - type: Website
+  url: https://www.afun-interactive.com/
+- type: About
+  url: https://www.afun-interactive.com/about/sub01.html
+- type: Blog
+  url: https://www.afun-interactive.com/news/sub01.html
+- type: ContactUs
+  url: https://www.afun-interactive.com/contact/sub01.html
+- type: Careers
+  url: https://www.afun-interactive.com/career/sub01.html
+- type: CaseStudies
+  url: https://www.afun-interactive.com/works/sub01.html
+- type: x-secondary-market-listing
   url: https://equityzen.com/company/afuninteractive
+x-enrichment:
+  date: '2026-09-12'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    AFUN Interactive is a work-for-hire real-time 3D content studio and virtual-artist management
+    business whose entire public web presence is a six-page Korean corporate brochure (About,
+    Business Area, Our Works, News, Career, Contact) behind a Cafe24 CUPID bot challenge; the
+    challenge was solved and there is no developers, docs, API or downloads section anywhere behind
+    it, no GitHub organization under any AFUN/APOKI/VV name, and no first-party package on npm,
+    PyPI, crates.io or RubyGems.
+  evidence:
+  - url: https://www.afun-interactive.com/business/sub01.html
+    status: 200
+  - url: https://www.afun-interactive.com/openapi.json
+    status: 200
+  - url: https://www.afun-interactive.com/zzz-control-does-not-exist-98765
+    status: 200
+  - url: https://api.github.com/orgs/afun-interactive
+    status: 404
+  - url: https://apoki.ai/.well-known/agent-card.json
+    status: 404
+  checked: '2026-09-12'

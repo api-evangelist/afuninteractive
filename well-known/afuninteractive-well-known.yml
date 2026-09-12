@@ -1,0 +1,154 @@
+generated: '2026-09-12'
+method: probed
+source: >-
+  Live anonymous GET of the named /.well-known/ path list against every host this record knows —
+  the registrable domain and www for afun-interactive.com, plus the two subsidiary hosts AFUN
+  Interactive operates through VV Entertainment (vv-ent.com) and its virtual artist APOKI (apoki.ai).
+  NOTHING WAS FOUND. No pointer of type WellKnown or SecurityTxt is emitted, because every path
+  either 404d or returned a soft-200.
+note: >-
+  www.afun-interactive.com sits behind a Cafe24 "CUPID" AES-cookie bot challenge. The challenge was
+  solved for this probe (AES-128-CBC decrypt of the inline key/iv/ciphertext, replayed as the CUPID
+  cookie), so these statuses are the origin's real answers and not the challenge page. Behind the
+  challenge the origin answers HTTP 200 with an HTML body titled "404 Not found Error" for EVERY
+  unknown path — a soft-404. A control path (/zzz-control-does-not-exist-98765) returned a byte-for-byte
+  identical body, which is how each 200 below is known to be an absence rather than a document.
+  vv-ent.com likewise answers 200 with its own HTML shell for every path (SPA/catch-all soft-200).
+  apoki.ai returns honest 404s.
+hosts:
+- host: www.afun-interactive.com
+  note: >-
+    Corporate site. Soft-404: HTTP 200 with an HTML "404 Not found Error" body on every path,
+    control-verified. Treated as absent.
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    result: soft-404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 200
+    result: soft-404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    result: soft-404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 200
+    result: soft-404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    result: soft-404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 200
+    result: soft-404
+    file: null
+  - path: /.well-known/agent.json
+    status: 200
+    result: soft-404
+    file: null
+- host: afun-interactive.com
+  note: Apex; same origin and same control-verified soft-404 behavior as www.
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    result: soft-404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 200
+    result: soft-404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    result: soft-404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 200
+    result: soft-404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    result: soft-404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 200
+    result: soft-404
+    file: null
+  - path: /.well-known/agent.json
+    status: 200
+    result: soft-404
+    file: null
+- host: apoki.ai
+  note: >-
+    Virtual artist site for APOKI, managed by AFUN Interactive subsidiary VV Entertainment.
+    Built on the imweb site platform. Honest 404s on every well-known path.
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    result: absent
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    result: absent
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    result: absent
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    result: absent
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    result: absent
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    result: absent
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    result: absent
+    file: null
+- host: vv-ent.com
+  note: >-
+    VV Entertainment, the AFUN Interactive subsidiary that manages APOKI. Catch-all HTML shell
+    answers 200 for every path; treated as absent.
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    result: soft-200-html-shell
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 200
+    result: soft-200-html-shell
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    result: soft-200-html-shell
+    file: null
+  - path: /.well-known/api-catalog
+    status: 200
+    result: soft-200-html-shell
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    result: soft-200-html-shell
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 200
+    result: soft-200-html-shell
+    file: null
+  - path: /.well-known/agent.json
+    status: 200
+    result: soft-200-html-shell
+    file: null
+summary:
+  hosts_probed: 4
+  paths_probed: 28
+  documents_found: 0
+  agent_card_found: false
+  security_txt_found: false
