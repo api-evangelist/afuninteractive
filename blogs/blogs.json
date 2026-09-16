@@ -1,0 +1,14 @@
+{
+  "repo": "afuninteractive",
+  "feeds": [
+    {
+      "source": "https://www.afun-interactive.com/about/sub01.html",
+      "feed_url": "https://www.afun-interactive.com/about/sub01.html",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-09-13T13:00:00Z"
+}
