@@ -64,36 +64,80 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-AFUN Interactive (에이펀인터렉티브) is a Seoul-based real-time 3D content production studio founded in
-2017 that builds digital humans, virtual celebrities and high-quality real-time 3D media. Its four
-stated service lines are Digital Celebrity Management, Digital Human, Ganimation (a real-time
-animation/game hybrid genre that won at the 2018 Venice International Film Festival), and High
-Quality Realtime 3D Contents. Through its subsidiary VV Entertainment it produces and manages the
-virtual K-pop artist APOKI.
+AFUN Interactive (에이펀인터렉티브) is a Seoul-based real-time 3D content production studio founded in 2017 that builds digital humans, virtual celebrities and high-quality real-time 3D media. Its four stated service lines are Digital Celebrity Management, Digital Human (photoreal CG characters and live avatars for hologram, VR, AR and AI concierge use), Ganimation (a real-time animation/game hybrid genre that won at the 2018 Venice International Film Festival), and High Quality Realtime 3D Contents (AR content, car configurators and high-end MR for automotive, entertainment and telecom clients). Through its subsidiary VV Entertainment it produces and manages the virtual K-pop artist APOKI. It is a work-for-hire production and artist-management business that sells finished 3D content, not developer access, and publishes no public API, SDK, developer portal or machine-readable specification.
 
-## Why this profile is thin
+**Areas:** Company · 3D Content Production · Digital Human · Virtual Artists · Real-Time Rendering · Entertainment · Augmented Reality · Virtual Reality · South Korea
 
-**No API surface — no developer program.** AFUN Interactive is a work-for-hire production and
-artist-management business. Its entire public web presence is a six-page Korean corporate brochure
-(About Us, Business Area, Our Works, News, Career, Contact Us) served from
-`www.afun-interactive.com` behind a Cafe24 "CUPID" AES-cookie bot challenge. The challenge was
-solved for this profile and every page was read: there is no developer, docs, API or downloads
-section anywhere on the site. Contract discovery (2026-09-12) additionally found no OpenAPI,
-Swagger, GraphQL, AsyncAPI, MCP manifest, A2A agent card, `llms.txt`, `apis.json` or any
-`/.well-known/` document on any host the company operates; no GitHub organization under any
-AFUN / APOKI / VV name; and no first-party package on npm, PyPI, crates.io or RubyGems.
+## AFUN Interactive on APIs.io
 
-Note on soft-404s: behind the bot challenge the origin answers HTTP **200** with an HTML body
-titled "404 Not found Error" for every unknown path. A control path
-(`/zzz-control-does-not-exist-98765`) returned a byte-for-byte identical body, which is how each
-200 in `well-known/afuninteractive-well-known.yml` is recorded as an absence rather than a document.
+Everything profiled for AFUN Interactive is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/afuninteractive/](https://apis.io/providers/afuninteractive/)** — or go straight to one of the APIs or properties below.
 
-## Links
+### Published properties
 
-- Website — https://www.afun-interactive.com/
-- Business Area — https://www.afun-interactive.com/business/sub01.html
-- Our Works — https://www.afun-interactive.com/works/sub01.html
-- News — https://www.afun-interactive.com/news/sub01.html
-- APOKI (virtual artist, via VV Entertainment) — https://apoki.ai/
-- VV Entertainment (subsidiary) — https://vv-ent.com/
-- Secondary-market listing — https://equityzen.com/company/afuninteractive
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Afuninteractive Domain Security](https://apis.io/security/afuninteractive/afuninteractive-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.afun-interactive.com/)
+- [Blog](https://www.afun-interactive.com/news/sub01.html)
+
+## API Evangelist rating
+
+**Kin Score 3.4** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 0.0 |
+| Access clarity | 0.0 |
+
+**Agent readiness 2.9** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | yes |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 5.9** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/afuninteractive/](https://apis.io/providers/afuninteractive/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for AFUN Interactive: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/afuninteractive/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
